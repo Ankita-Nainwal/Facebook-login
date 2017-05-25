@@ -1,0 +1,17 @@
+<div *ngIf= "postnum" >
+ <img src="{{pic}}">
+
+   <p>Friends:{{total}}</p>
+   <p>{{img1}}</p>
+   <p>Email  :{{mailid}}</p>
+   <p>Gender :{{gender}}</p>
+   <p>Posts  :{{postnum}}</p>
+
+<!-- <button class="btn btn-primary"(click)="getLoginStatus()">profile</button> -->
+<div *ngIf= "postnum">
+<button  class="btn btn-primary"(click)="logout1()">logout</button>
+
+<input #postdata type="text" class="form-control">
+<button  class="btn btn-primary" (click)="post(postdata.value)">Post</button>
+</div>
+</div>
